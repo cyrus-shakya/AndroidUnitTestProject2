@@ -3,7 +3,7 @@ package jlin2.examples.localtesting
 import org.junit.Test
 import org.junit.Assert.*
 
-//Edited new class and code for upcoming commit
+// commit
 class EmailValidatorTest {
 
     @Test
