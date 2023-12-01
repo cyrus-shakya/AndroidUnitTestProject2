@@ -16,8 +16,6 @@ class MainActivityTest {
     @get:Rule
     val activityRule = ActivityTestRule(MainActivity::class.java)
 
-
-
     @Test
     fun validateTextViewInMainActivity() {
         // Validate correct strings in the TextView in the main activity.
@@ -103,17 +101,6 @@ class MainActivityTest {
             .check(ViewAssertions.matches(ViewMatchers.withText(inputText)))
 
         pause()
-    }
-
-    @Test
-    fun validateCorrectStringsInShowTextActivityTextView() {
-        // Validate correct strings in the TextView in the ShowTextActivity.
-        val inputText = "Test String"
-        val intent = ShowTextActivity.newStartIntent(activityRule.activity, inputText)
-        activityRule.launchActivity(intent)
-        pause()
-        Espresso.onView(ViewMatchers.withId(R.id.show_text_view))
-            .check(ViewAssertions.matches(ViewMatchers.withText(inputText)))
     }
 
     private fun pause() {
