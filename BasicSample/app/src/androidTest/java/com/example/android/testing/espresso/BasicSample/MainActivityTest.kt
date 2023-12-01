@@ -105,6 +105,17 @@ class MainActivityTest {
         pause()
     }
 
+    @Test
+    fun validateCorrectStringsInShowTextActivityTextView() {
+        // Validate correct strings in the TextView in the ShowTextActivity.
+        val inputText = "Test String"
+        val intent = ShowTextActivity.newStartIntent(activityRule.activity, inputText)
+        activityRule.launchActivity(intent)
+        pause()
+        Espresso.onView(ViewMatchers.withId(R.id.show_text_view))
+            .check(ViewAssertions.matches(ViewMatchers.withText(inputText)))
+    }
+
     private fun pause() {
         try {
             Thread.sleep(1000) // Pause for 1 second
@@ -113,3 +124,4 @@ class MainActivityTest {
         }
     }
 }
+
