@@ -8,9 +8,26 @@ Group 18
 * Cyrus Shakya : 1157720
 * Nabin Pun : 1164717
 
-## Local Testing file:
-## Overview
-It contains code for an Android application designed to perform email address format validation tests. The tests cover a variety of cases, including correct email address formats, incorrect formats, and edge cases.
+## 1) Basic Sample file:
+It contains UI (Instrumented) test code which focuses on validating the behavior of the TextView and EditText components in the main activity and ShowTextActivity.
+
+## Test Cases
+#### Validate correct strings in the TextView
+
+- **Test Case 1:** Check the initial string in the TextView.
+- **Test Case 2:** Validate the TextView after pressing the Change Text button.
+- **Test Case 3:** Validate the TextView after pressing the Open Activity and Change Text button.
+
+#### Validate the values in the EditText (EditTextUserInput)
+
+- **Test Case 4:** Enter "123" and press Change Text button, then test the string.
+- **Test Case 5:** Enter "123" and press Open Activity and Change Text button, then test the string in ShowTextActivity.
+- **Test Case 6:** Without entering anything, press Change Text button, and test the string (empty/null).
+- **Test Case 7:** Without entering anything, press Open Activity and Change Text button, and test the string in ShowTextActivity (null).
+- **Test Case 8:** Enter "abcdef" and press Change Text button, then test the string.
+
+## 2) Local Testing 2 file:
+It contains Unit test code for an Android application designed to perform email address format validation tests. The tests cover a variety of cases, including correct email address formats, incorrect formats, and edge cases.
 
 ## Test Cases
 
