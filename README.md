@@ -1,4 +1,5 @@
 # INFO-6130 Android App Developement Project 2
+This was group project that we did in our Android app development course which focuses on Instrumented test and local tests in android.
 
 ## Group Name
 Group 18
