@@ -12,10 +12,8 @@ import org.junit.runner.RunWith
 
 @RunWith(AndroidJUnit4::class)
 class MainActivityTest {
-
     @get:Rule
     val activityRule = ActivityTestRule(MainActivity::class.java)
-
     @Test
     fun validateTextViewInMainActivity() {
         // Validate correct strings in the TextView in the main activity.
@@ -24,7 +22,6 @@ class MainActivityTest {
 
         pause()
     }
-
     @Test
     fun validateEditTextChangeTextButton() {
         // Enter “123” and press Change Text Button, and test the string
@@ -37,7 +34,6 @@ class MainActivityTest {
             .check(ViewAssertions.matches(ViewMatchers.withText(inputText)))
         pause()
     }
-
     @Test
     fun validateEditTextOpenActivityChangeTextButton() {
         // Enter “123” and press Open Activity and Change Text Button,
