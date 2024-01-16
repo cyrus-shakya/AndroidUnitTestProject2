@@ -45,3 +45,5 @@ It contains Unit test code for an Android application designed to perform email 
 - **Test Case 7:** Incorrect email address format (empty string) - `""`
 - **Test Case 8:** Incorrect email address format (null) - `null`
 
+## Happy testing!
+
